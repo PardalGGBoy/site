@@ -100,23 +100,23 @@ input:checked + .slider:before {
   <img src="https://multprofissoes.com.br/pesquisa_atendimento/imagens/Logo.png" alt="Logo" width="400px" class="Logo" >
   <div>
 <script>
-  // Seleciona o formulário e o botão de submit
+
   const form = document.getElementById("loginForm");
 
-  // Quando o formulário for enviado
-  form.onsubmit = function(e) {
-    e.preventDefault();  // Impede o envio padrão do formulário
 
-    // Obtém os valores dos campos de entrada
+  form.onsubmit = function(e) {
+    e.preventDefault();  
+
+ 
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
 
-    // Verifica se os dados estão corretos
+ 
     if (username === "Josimar" && password === "1234") {
-      // Redireciona para Painel.html se as credenciais forem corretas
+
       window.location.href = "https://pardalggboy.github.io/site/Painel.html";
     } else {
-      // Exibe um alerta caso as credenciais estejam incorretas
+
       alert("Nome de usuário ou senha incorretos!");
     }
   };
