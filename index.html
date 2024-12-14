@@ -100,38 +100,16 @@ input:checked + .slider:before {
   <img src="https://a.pinatafarm.com/1000x997/58e6e24d5a/nerd-emoji.jpg" alt="Logo" width="400px" class="Logo" >
   <div>
     <h1>Formulario de Login</h1>
-<form id="loginForm">
-  <input type="text" name="username" id="username" placeholder="Nome de Usuario" required>
-  <input type="password" name="password" id="password" placeholder="Senha" required>
-  <span>Lembrar me</span>
-  <label class="switch">
-    <input type="checkbox">
-    <span class="slider"></span>
-  </label>
-  <button type="submit">Entrar</button>
-</form>
-<script>
-
-  const form = document.getElementById("loginForm");
-
-
-  form.onsubmit = function(e) {
-    e.preventDefault();  
-
- 
-    const username = document.getElementById("username").value;
-    const password = document.getElementById("password").value;
-
- 
-    if (username === "Josimar" && password === "1234") {
-
-      window.location.href = "https://pardalggboy.github.io/site/Painel.html";
-    } else {
-
-      alert("Nome de usuário ou senha incorretos!");
-    }
-  };
-</script>
+    <form action = "Painel.html" method="get">
+      <input type="text" placeholder="Nome de Usuario">
+      <input type="password" placeholder="Senha">
+      <span>Lembrar me</span>
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider"></span>
+      </label>
+      <button type="submit">Entrar</button>
+    </form>
   </div>
 </body>
-</html>
+</html> 
