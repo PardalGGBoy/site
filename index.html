@@ -110,6 +110,12 @@ input:checked + .slider:before {
       </label>
       <button type="submit">Entrar</button>
     </form>
+    <script>
+  document.getElementById('loginForm').onsubmit = function(e) {
+    e.preventDefault(); // Previne o comportamento padrão do formulário
+    window.location.href = 'Painel.html'; // Redireciona para a página Painel.html
+  }
+</script>
   </div>
 </body>
 </html>
